@@ -1,0 +1,40 @@
+		driver.get("http://leaftaps.com");
+
+		driver.findElementById("username").sendKeys("DemoSalesManager");
+		driver.findElementById("password").sendKeys("crmsfa");
+
+		driver.findElementByClassName("decorativeSubmit").click();
+
+		driver.findElementByLinkText("CRM/SFA").click();
+		driver.findElementByLinkText("Create Lead").click();
+
+		driver.findElementByLinkText("Merge Leads").click();
+
+		driver.findElementByXPath("//img[@alt='Lookup'][1]").click();
+
+
+
+		driver.findElementByXPath("//label[contains(text(),'Lead ID:')]/following::input").sendKeys("11071");
+		driver.findElementByXPath("//button[contains(text(),'Find Leads')]").click();
+
+		driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId'][1]/a").click();
+
+		driver.findElementByXPath("(//img[@alt='Lookup'])[2]").click();
+
+		driver.findElementByXPath("//label[contains(text(),'Lead ID:')]/following::input").sendKeys("10031");
+		driver.findElementByXPath("//button[contains(text(),'Find Leads')]").click();
+
+
+		driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId'][1]/a").click();
+
+
+		driver.findElementByLinkText("Merge").click();
+
+
+		driver.findElementByLinkText("Merge Leads").click();
+		driver.findElementByXPath("//img[@alt='Lookup'][1]").click();
+
+
+
+		driver.findElementByXPath("//label[contains(text(),'Lead ID:')]/following::input").sendKeys("10024");
+		driver.findElementByXPath("//button[contains(text(),'Find Leads')]").click();
